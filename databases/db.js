@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
-const DBLINK =
-  "mongodb+srv://molaraiche:Mern$2023@cluster0.zlvjlom.mongodb.net/?retryWrites=true&w=majority";
+const DBLINK = process.env.MONGO_URL;
 
 const connectDB = async () => {
   try {
